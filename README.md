@@ -34,6 +34,7 @@ In the `dependencies:` section of your `pubspec.yaml`, add the following line:
 * For getting WIFI Details just call this method
 ```dart
     // Getting WIFI IP Details
+    final _publicIP = await WifiIPDetails.getMyIP();
     final _ipDetails = await WifiIPDetails.getMyWIFIDetails();
 ```
 * Incase you have the access token then just pass in the access token on the same method.
